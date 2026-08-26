@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Mail, Facebook, Send } from "lucide-react";
 
 const CAMPAIGN_EMAIL = "dronikashirleyward2@gmail.com";
+const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61593521592856";
 
 export function ContactSection() {
   const [name, setName] = useState("");
@@ -68,7 +69,7 @@ export function ContactSection() {
             {CAMPAIGN_EMAIL}
           </a>
           <a
-            href="https://facebook.com"
+            href={FACEBOOK_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:text-[#c8121b] transition-colors"
