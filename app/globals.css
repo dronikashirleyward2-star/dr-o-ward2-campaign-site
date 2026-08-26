@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --campaign-red: 0 74% 42%;
+  --campaign-black: 0 0% 9%;
+  --campaign-white: 0 0% 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Libre Franklin', system-ui, sans-serif;
+  background-color: #0f0f0f;
+}
+
+.font-display {
+  font-family: 'Bebas Neue', 'Libre Franklin', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.diagonal-clip {
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+}
+
+.diagonal-clip-reverse {
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.text-shadow-strong {
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out both;
+}
